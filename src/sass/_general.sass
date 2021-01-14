@@ -27,6 +27,7 @@ nav
         padding-right: 28px
         &:last-child
             border-right: none
+
 .hamburger
 	display: none
 
@@ -78,7 +79,6 @@ nav
 		font-weight: 400
 		text-transform: uppercase
 		+btn_hover
-
 
 .main
 	min-height: 800px
@@ -336,6 +336,7 @@ nav
 			li
 				&::before
 					background: url('../img/icons/red.png') center (center/cover) no-repeat
+
 .city
 	position: relative
 	min-height: 717px
@@ -361,6 +362,7 @@ footer
 	a 
 		&:hover 
 			text-decoration: none
+
 .footer
 	position: relative
 	&_line
@@ -395,7 +397,7 @@ footer
 			i 
 				color: #fff
 	&_link
-		width: 390px
+		max-width: 390px
 		margin: 0 auto
 		&_main
 			display: flex 
@@ -428,9 +430,10 @@ footer
 		width: 296px
 		bottom: 69px
 		right: 23px
-		margin-right: 7px
-		&:last-child
-			margin-right: 0
+		a
+			margin-right: 7px
+				&:last-child
+					margin-right: 0
 		.app
 			width: 94px
 	&_bot

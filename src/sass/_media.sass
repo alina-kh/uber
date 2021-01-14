@@ -12,6 +12,45 @@
             align-items: flex-start
         &_descr
             width: 300px
+    .mobile
+        &_item
+            width: 290px
+        &_subtitle
+            font-size: 22px
+
+    .footer
+    &_wrap>div
+        width: 50%
+        &:nth-child(1)
+            width: 25%
+        &:nth-child(3)
+            width: 25%
+            display: flex
+            justify-content: flex-end
+    &_link
+        position: relative
+        &_main
+            line-height: 10px
+            a
+                font-size: 14px
+        &_about
+            margin: 0 auto
+            margin-top: 10px
+            width: 244px
+            flex-wrap: wrap
+            justify-content: space-between
+            line-height: 25px
+            a
+                margin: 0 7px
+                font-size: 11px
+        &_lang
+            margin-top: 10px
+    &_app
+        display: flex
+        a 
+            margin: 0 3px
+            img 
+                width: 100% 
 
 @media (max-width: 991px)
     .menu
@@ -50,16 +89,32 @@
             width: 100%
     .footer
         &_ss
+            display: flex
+            flex-wrap: wrap
             margin-top: -15px
             width: 80px
             &_item
                 margin-top: 3px
-
         &_app
             width: 94px
             margin-top: -30px
             .app   
                 margin-top: 3px
+        &_link
+            margin: 0 auto
+            width: 237px
+            &_main
+                font-size: 13px
+                padding: 0 0
+                a
+                    padding-right: 10px
+            &_about
+                margin: 0 auto
+                margin-top: 10px
+                width: 244px
+                flex-wrap: wrap
+                justify-content: space-between
+                line-height: 25px
 
 @media (max-width: 767px)
     .menu
@@ -110,7 +165,6 @@
         display: none
     .xs-visible
         display: block
-
     .subheader
         &_number
             display: block
@@ -129,6 +183,42 @@
     .main
         &_header
             line-height: 45px
+    .footer
+        &_line
+            width: 253px
+        &_wrap
+            flex-direction: column
+            padding-top: 22px
+            justify-content: center
+            align-items: center
+        &_wrap > div 
+            width: 100%
+            margin-bottom: 20px
+            &:nth-child(1)
+                order: 2
+            &:nth-child(2)
+                order: 1
+            &:nth-child(3)
+                order: 3
+                justify-content: center
+        &_ss
+            position: inherit
+            flex-wrap: nowrap
+            width: 160px
+            margin: 0 auto
+            top: 140px
+        &_app
+            position: inherit
+            flex-wrap: nowrap
+            width: 296px
+            margin: 0 auto
+            top: 220px
+            .app
+                width: 82px
+        &_bot
+            display: none
+
+
 @media (max-width: 575px)
     nav
         height: 30px
@@ -213,7 +303,6 @@
             display: none
         .subtitle
             display: none
-        
         &_img
             background-color: #070716
         &_descr
